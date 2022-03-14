@@ -1,0 +1,18 @@
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+app:
+  locale:
+    file:
+      in: '/data/in'
+      out: '/data/out'
+  scheduler:
+    exec-job: '0 */1 * * * *'
+  time-zone: 'America/Sao_Paulo'
